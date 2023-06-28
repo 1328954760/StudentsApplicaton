@@ -16,13 +16,6 @@ public class StudentsApplication {
 		return "Hello Spring Boot!";
 	}
 
-	/*
-	@GetMapping("/student")
-	public String student() {
-		return "Hello Student!";
-	}
-	 */
-
 	public static void main(String[] args) {
 		SpringApplication.run(StudentsApplication.class, args);
 	}
