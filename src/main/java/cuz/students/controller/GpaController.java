@@ -2,7 +2,6 @@ package cuz.students.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.google.gson.Gson;
-import cuz.students.StudentsApplication;
 import cuz.students.mapper.CourseMapper;
 import cuz.students.mapper.ScoreMapper;
 import cuz.students.mapper.StudentMapper;
@@ -39,7 +38,7 @@ public class GpaController {
 
             double sumPoint = 0;
             double sumCredit = 0;
-            for(Score sc : scoreList){
+            for(Score sc : scoreList){ // 计算学生GPA
                 double score = sc.getScore();
                 String cid = sc.getCid();
                 Course c = courseMapper.selectById(cid);
